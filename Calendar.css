@@ -1,0 +1,21 @@
+table,
+td,
+tr,
+thead {
+  border: 1px solid black;
+}
+
+body {
+  background-color: grey;
+}
+
+.day td {
+  background-color: gray;
+}
+
+#today {
+  background-color: cornflowerblue;
+}
+.top {
+  margin-left: 87px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="Calendar.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Takvim</title>
+  </head>
+  <body>
+    <div class="container col-md-4">
+      <div class="row col-md-10 header">
+        <select class="col-md-4 month" onchange="change()"></select>
+        <select class="col-md-3 year" onchange="yearChange()"></select>
+        <input
+          class="col-md-1 top"
+          type="button"
+          value="&xwedge;"
+          onclick="increaseDecrease('-')"
+        />
+        <input
+          class="col-md-1 bottom"
+          type="button"
+          value="&xvee;"
+          onclick="increaseDecrease('+')"
+        />
+      </div>
+      <div class="row col-md-3 body">
+        <table class="container col-md-3 table"></table>
+      </div>
+      <div class="row col-md-6 footer">
+        <label class="today">Bugün</label>
+        <input type="text" placeholder="Add an event or reminder" />
+      </div>
+    </div>
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="Calendar.js"></script>
+  </body>
+</html>
